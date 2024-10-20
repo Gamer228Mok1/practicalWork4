@@ -38,6 +38,8 @@
             this.textSubject = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxBody = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxService = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -87,9 +89,9 @@
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(350, 389);
+            this.buttonSend.Location = new System.Drawing.Point(607, 386);
             this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(75, 23);
+            this.buttonSend.Size = new System.Drawing.Size(163, 39);
             this.buttonSend.TabIndex = 5;
             this.buttonSend.Text = "Отправить";
             this.buttonSend.UseVisualStyleBackColor = true;
@@ -124,11 +126,34 @@
             this.textBoxBody.Size = new System.Drawing.Size(659, 227);
             this.textBoxBody.TabIndex = 9;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 399);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Выбрать сервис";
+            // 
+            // comboBoxService
+            // 
+            this.comboBoxService.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxService.FormattingEnabled = true;
+            this.comboBoxService.Items.AddRange(new object[] {
+            "GMail",
+            "Main.ru"});
+            this.comboBoxService.Location = new System.Drawing.Point(146, 396);
+            this.comboBoxService.Name = "comboBoxService";
+            this.comboBoxService.Size = new System.Drawing.Size(301, 21);
+            this.comboBoxService.TabIndex = 11;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxService);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxBody);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.textSubject);
@@ -159,6 +184,8 @@
         private System.Windows.Forms.TextBox textSubject;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxBody;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBoxService;
     }
 }
 
